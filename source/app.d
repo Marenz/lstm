@@ -6,7 +6,7 @@ auto sigmoid ( T ) ( T x )
 {
     import std.math : exp;
 
-    return 1.0L / (1.0L + exp(-x));
+    return 1.0 / (1.0 + exp(-x));
 }
 
 // Create a two dimensional array filled with random values
