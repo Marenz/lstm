@@ -466,6 +466,4 @@ void main()
         param.applyDiff(0.1L);
         net.xListClear();
     }
-
-	writefln("Edit source/app.d to start your project. %s", sigmoid(12.0));
 }
