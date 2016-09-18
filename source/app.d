@@ -403,18 +403,9 @@ auto outer ( Vector a, Vector b )
 {
     auto result = slice!double(a.length, b.length);
 
-    size_t idx_a, idx_b;
-
-    while (idx_a < a.length)
-    {
-        while (idx_b < b.length)
-        {
+    foreach (immutable idx_a; 0..a.length)
+        foreach (immutable idx_b; 0..b.length)
             result[idx_a, idx_b] = a[idx_a] * b[idx_b];
-            idx_b++;
-        }
-        idx_a++;
-        idx_b=0;
-    }
 
     return result;
 }
