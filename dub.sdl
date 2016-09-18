@@ -1,0 +1,6 @@
+name "lstm"
+description "LSTM Experiments"
+authors "Mathias Baumann"
+copyright "Copyright © 2016, Mathias Baumann"
+license "GPLv3"
+dependency "mir" version="~>0.17.0-alpha9"
